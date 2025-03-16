@@ -4,34 +4,43 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context=".MainActivity">
 
     <Button
         android:id="@+id/button"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="LED ALL on"
+        android:text="ALL ON"
         tools:layout_editor_absoluteX="182dp"
         tools:layout_editor_absoluteY="172dp" />
+
     <CheckBox
+        android:id="@+id/checkBox1"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="LED1"
-        />
+        android:onClick="OnCheckedboxLedClicked"/>
+
     <CheckBox
+        android:id="@+id/checkBox2"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="LED2"
-        />
+        android:onClick="OnCheckedboxLedClicked"/>
+
     <CheckBox
+        android:id="@+id/checkBox3"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="LED3"
-        />
+        android:onClick="OnCheckedboxLedClicked"/>
+
     <CheckBox
+        android:id="@+id/checkBox4"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="LED4"
-        />
+        android:onClick="OnCheckedboxLedClicked"/>
+
 </LinearLayout>
